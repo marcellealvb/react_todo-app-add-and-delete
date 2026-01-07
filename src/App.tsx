@@ -16,7 +16,6 @@ export const App: React.FC = () => {
 
   const inputRef = useRef<HTMLInputElement>(null);
 
-
   const filteredTodos = todos.filter(todo => {
     if (filter === 'active') {
       return !todo.completed;
